@@ -1,0 +1,34 @@
+{
+    "SEO_TITLE":"Portfolio de LnyDev - Desarrollador Web",
+    "HOME_INTRO": {
+        "INTRO_TITTLE":"Hola, soy Francisco",
+        "INTRO_DESCRIPTION_1":"Egresado de ingeniería en Informática.",
+        "INTRO_DESCRIPTION_2":"Desarrollador Web Full Stack.",
+        "INTRO_DESCRIPTION_3":"Vivo en Mulchén, Chile.",
+        "TITLE_EXP": "Experiencia laboral",
+        "TITLE_TEC": "Tecnologías"
+    },
+    
+    "SUBTITLE": {
+        "TITLE_EXP": "Experiencia laboral",
+        "TITLE_TEC": "Tecnologías"
+    },
+    "SOCIAL_TEXT": {
+        "GIT_TEXT": "GitHub",
+        "EMAIL": "fcoretcvas@gmail.com",
+        "CV": "Descargar CV"
+    },
+    "EXP_TEXT": {
+        "DATE_TEXT": "Enero 2024 - Actualidad",
+        "TITLE_EXP": "Pagina Web para distribuidora de gas",
+        "TITLE_DESC": "Encargado del desarrollo completo de un sitio web, incluyendo diseño, implementación de sistema de gestión de contenido, configuración de autenticación de datos para diferentes tipos de usuarios y empresas/sucursales, creación de sistema de gestión de stock y módulo de seguimiento diario de actividades financieras (caja)."
+    },
+    "TEC_TEXT": {
+        "FRONT": "Frontend",
+        "BACK": "Backend",
+        "APRENDIENDO": "Aprendiendo",
+        "HERRAMIENTAS": "Herramientas"
+
+    }
+}
+

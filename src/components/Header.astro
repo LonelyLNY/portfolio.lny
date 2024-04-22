@@ -1,0 +1,30 @@
+---
+import { getI18N } from "../i18n/index"
+import { getLangFromUrl, useTranslations, useTranslatedPath, } from '../i18n/utils';
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+import LanguageSelector from "../components/LanguageSelector.astro"
+---
+
+<header id="header-nav" class="fixed top-0 z-50 w-full px-6 sm:py-2 py-2.5 ">
+    <div class="mx-auto flex max-w-7xl items-center justify-between">
+        <div class="flex flex-grow basis-0"></div>
+        <nav class="hidden md:flex md:items-center flex-grow basis-0 items-center font-semi-bold w-full gap-x-2 text-sm md:justify-center">
+            
+            <a class="px-4 py-2 text-white rounded-full " href="#top">{t('nav.inicio')}</a>
+            <a class="px-4 py-2 text-white rounded-full " href="#experiencia">{t('nav.experiencia')}</a>
+            <a class="px-4 py-2 text-white rounded-full " href="#tecnologias">{t('nav.tecnologia')}</a>
+            <a class="px-4 py-2 text-white rounded-full " href="#contact">{t('nav.contacto')}</a>
+            <LanguageSelector />
+        </nav>
+        <div class="hidden md:flex-grow md:basis-0 justify-end whitespace-nowrap md:flex md:text-base">
+            <button class="md:text-sm lg:text-base md:py-2"></button>
+        </div>
+    </div>
+
+</header>

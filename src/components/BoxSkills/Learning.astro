@@ -1,0 +1,62 @@
+---
+import {getI18N} from '../../i18n'
+
+const {currentLocale } = Astro
+const i18n = getI18N({currentLocale})
+
+---
+<article class="relative rounded-2xl p-7 shadow-2xl overflow-hidden false" style="background: radial-gradient(circle, rgba(165, 149, 189, 0.082) 0%, rgba(12, 6, 31, 0) 90%); border: 1px solid rgba(223, 192, 249, 0.372);">
+    
+    
+    <div class="pointer-events-none absolute -inset-px opacity-0 transition duration-300" style="opacity: 0; background: radial-gradient(600px at 349.125px 292.122px, rgba(255, 182, 255, 0.1), transparent 40%);"></div>
+    <h3 class="text-center mb-8 text-xl font-bold lg:text-4xl lg:break-words bg-gradient-to-t from-[#f6baba] to-[#b10e37] dark:from-[#ffffff] dark:to-[#ffffff] bg-clip-text text-transparent">
+        {i18n.TEC_TEXT.APRENDIENDO}
+    </h3>
+    <ul class="grid grid-cols-3 gap-4">
+        <li class="rounded-2xl group flex flex-col justify-center items-center">
+            <svg class="size-12 mb-2" width="64" height="64" viewBox="0 0 32 32">
+                <defs>
+                    <linearGradient id="A" x1="811.527" y1="574.895" x2="665.255" y2="573.732" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#366a96"></stop>
+                        <stop offset="1" stop-color="#3679b0"></stop>
+                    </linearGradient>
+                    <linearGradient id="B" x1="862.824" y1="642.176" x2="573.276" y2="642.176" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#ffc836"></stop>
+                        <stop offset="1" stop-color="#ffe873"></stop>
+                    </linearGradient>
+                </defs>
+                <g transform="matrix(.1617 0 0 .158089 -107.53764 -81.66187)">
+                    <path d="M716.255 544.487c0-13.623 3.653-21.034 23.822-24.563 13.693-2.4 31.25-2.7 47.627 0 12.935 2.135 23.822 11.77 23.822 24.563v44.945c0 13.182-10.57 23.98-23.822 23.98h-47.627c-16.164 0-29.787 13.782-29.787 29.363v21.564h-16.376c-13.852 0-21.917-9.988-25.305-23.964-4.57-18.776-4.376-29.963 0-47.945 3.794-15.687 15.917-23.964 29.77-23.964h65.52v-6h-47.645v-17.98z" fill="url(#A)"></path>
+                    <path d="M811.527 688.32c0 13.623-11.823 20.523-23.822 23.964-18.052 5.188-32.54 4.394-47.627 0-12.6-3.67-23.822-11.17-23.822-23.964v-44.945c0-12.935 10.782-23.98 23.822-23.98h47.627c15.864 0 29.787-13.71 29.787-29.963v-20.964h17.858c13.87 0 20.4 10.305 23.822 23.964 4.764 18.97 4.976 33.157 0 47.945-4.817 14.364-9.97 23.964-23.822 23.964H763.9v6h47.627v17.98z" fill="url(#B)"></path>
+                    <path d="M728.166 541.505c0-4.976 3.988-9 8.93-9 4.923 0 8.93 4.023 8.93 9 0 4.96-4.006 8.982-8.93 8.982-4.94 0-8.93-4.023-8.93-8.982zm53.59 149.798c0-4.96 4.006-8.982 8.93-8.982 4.94 0 8.93 4.023 8.93 8.982 0 4.976-3.988 9-8.93 9-4.923 0-8.93-4.023-8.93-9z" fill="#fff"></path>
+                </g>
+            </svg>
+            <span class="text-sm w-full text-center">Python</span>
+        </li>
+
+        <li class="rounded-2xl group flex flex-col justify-center items-center">
+            <svg class="size-12 mb-2" viewBox="0 0 256 366" preserveAspectRatio="xMidYMid">
+                <path fill="currentColor" d="M182.022 9.147c2.982 3.702 4.502 8.697 7.543 18.687L256 246.074a276.467 276.467 0 0 0-79.426-26.891L133.318 73.008a5.63 5.63 0 0 0-10.802.017L79.784 219.11A276.453 276.453 0 0 0 0 246.04L66.76 27.783c3.051-9.972 4.577-14.959 7.559-18.654a24.541 24.541 0 0 1 9.946-7.358C88.67 0 93.885 0 104.314 0h47.683c10.443 0 15.664 0 20.074 1.774a24.545 24.545 0 0 1 9.95 7.373Z"></path>
+                <path fill="#FF5D01" d="M189.972 256.46c-10.952 9.364-32.812 15.751-57.992 15.751-30.904 0-56.807-9.621-63.68-22.56-2.458 7.415-3.009 15.903-3.009 21.324 0 0-1.619 26.623 16.898 45.14 0-9.615 7.795-17.41 17.41-17.41 16.48 0 16.46 14.378 16.446 26.043l-.001 1.041c0 17.705 10.82 32.883 26.21 39.28a35.685 35.685 0 0 1-3.588-15.647c0-16.886 9.913-23.173 21.435-30.48 9.167-5.814 19.353-12.274 26.372-25.232a47.588 47.588 0 0 0 5.742-22.735c0-5.06-.786-9.938-2.243-14.516Z"></path>
+            </svg>
+            <span class="text-sm w-full text-center">Astro</span>
+        </li>
+        <li class="rounded-2xl group flex flex-col justify-center items-center">
+            <svg class="size-12 mb-2" viewBox="0 0 256 154" width="256" height="154" preserveAspectRatio="xMidYMid">
+            
+                    <defs>
+                        <linearGradient x1="-2.77777778%" y1="32%" x2="100%" y2="67.5555556%" id="linearGradient-1">
+                            <stop stop-color="#2298BD" offset="0%"/>
+                            <stop stop-color="#0ED7B5" offset="100%"/>
+                        </linearGradient>
+                    </defs>
+                    <g>
+                        <path d="M128,-1.0658141e-14 C93.8666667,-1.0658141e-14 72.5333333,17.0666667 64,51.2 C76.8,34.1333333 91.7333333,27.7333333 108.8,32 C118.537481,34.4343704 125.497363,41.4985481 133.201067,49.3184 C145.750756,62.0567704 160.275437,76.8 192,76.8 C226.133333,76.8 247.466667,59.7333333 256,25.6 C243.2,42.6666667 228.266667,49.0666667 211.2,44.8 C201.462519,42.3656296 194.502637,35.3014519 186.798933,27.4816 C174.249244,14.7432296 159.724563,-1.0658141e-14 128,-1.0658141e-14 Z M64,76.8 C29.8666667,76.8 8.53333333,93.8666667 0,128 C12.8,110.933333 27.7333333,104.533333 44.8,108.8 C54.5374815,111.23437 61.497363,118.298548 69.2010667,126.1184 C81.7507556,138.85677 96.275437,153.6 128,153.6 C162.133333,153.6 183.466667,136.533333 192,102.4 C179.2,119.466667 164.266667,125.866667 147.2,121.6 C137.462519,119.16563 130.502637,112.101452 122.798933,104.2816 C110.249244,91.5432296 95.724563,76.8 64,76.8 Z" fill="url(#linearGradient-1)"/>
+                    </g>
+                
+            </svg>
+            <span class="text-sm w-full text-center">TailwindCSS</span>
+        </li>
+        
+    </ul>
+</article>

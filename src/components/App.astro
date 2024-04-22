@@ -1,0 +1,100 @@
+---
+import Layout from "../layouts/Layout.astro"
+import SectionContainer from "../components/SectionContainer.astro"
+import GitHubIcon from "../components/icons/GitHub.astro"
+import BriefCaseIcon from "../components/icons/BriefCase.astro"
+import SocialPill from "../components/SocialPill.astro"
+import EmailIcon from "../components/icons/Email.astro"
+import CodeIcon from "../components/icons/Code.astro"
+import Experiencia from "../components/Experiencia.astro"
+import BoxSkills from "../components/BoxSkills.astro"
+import DowloadIcon from "../components/icons/Dowload.astro"
+
+import {getI18N} from '../i18n'
+
+const {currentLocale } = Astro
+const i18n = getI18N({currentLocale})
+---
+
+<Layout title={i18n.SEO_TITLE}
+>
+    <main class="px-4">
+        <SectionContainer class="section py-44 pb-32 text-center flex flex-col items-center justify-center w-full mx-auto lg:w-[740px] px-3.5 md:px-0">
+            <img
+                class="rounded-full size-40 mb-4"
+                src="https://avatars.githubusercontent.com/u/110742988?v=4"
+                alt="lny photo"
+            />
+
+            <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex
+            flex-row gap-x-4 pb-6 lg:pb-8">
+                {i18n.HOME_INTRO.INTRO_TITTLE}
+                <div class="flex justify-center items-center">
+                
+                </div>
+            </h1>
+
+            <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+                <span class="opacity-80"
+                    >{i18n.HOME_INTRO.INTRO_DESCRIPTION_1}
+                </span>
+                
+                <span class="text-purple-300/90"
+                    >
+                </span>
+
+                <span class='inline-flex animate-background-shine bg-[linear-gradient(110deg,#E3C0F6,45%,#A956F2,55%,#E3C0F6)] bg-[length:250%_100%] bg-clip-text text-xl lg:text-2xl text-transparent'>
+                    {i18n.HOME_INTRO.INTRO_DESCRIPTION_2}
+                </span>
+
+                <span class="opacity-80" >{i18n.HOME_INTRO.INTRO_DESCRIPTION_3} </span>
+            </h2>
+
+            <nav class="flex gap-5 mt-6 flex-wrap ">
+                <SocialPill>
+                    <GitHubIcon class="size-4 md:size-6"/> 
+                    <a  href="https://github.com/LonelyLNY"> <p set:html={i18n.SOCIAL_TEXT.GIT_TEXT}></p></a>
+                    
+
+                </SocialPill>
+
+                <SocialPill href="#">
+                    <EmailIcon class="size-4 md:size-6"/> 
+                    <a href="mailto:fcoretcvas@gmail.com"><p set:html={i18n.SOCIAL_TEXT.EMAIL}></p></a>
+                    
+                </SocialPill>
+
+                <SocialPill href="#">
+                    <DowloadIcon class="size-4 md:size-6"/> 
+                    <a href="https://drive.google.com/drive/folders/1kDDZ2dTW034h8MQekdx10uHFyTB199vE?usp=drive_link" target="_blank" > 
+                        <p set:html={i18n.SOCIAL_TEXT.CV}></p></a>
+                </SocialPill>
+            </nav>            
+        </SectionContainer>
+        
+        <div class="space-y-24">
+            <SectionContainer id="experiencia">
+                    <h2 class="text-2xl font-bold mb-8 flex gap-x-2  pt-20 items-center justify-center">
+                        <BriefCaseIcon  class="size-7"/>
+                        <p>{i18n.SUBTITLE.TITLE_EXP}</p>
+                    </h2>
+                    
+                <Experiencia/>
+            </SectionContainer>
+
+
+            <SectionContainer id="tecnologias">
+                <h2 class="text-2xl font-bold mb-8 flex gap-x-2  pt-20 items-center justify-center">
+                    <CodeIcon  class="size-7"/>
+                    <p>{i18n.SUBTITLE.TITLE_TEC}</p>
+                </h2>
+                
+                <BoxSkills />
+                
+            </SectionContainer>
+
+        </div>
+    </main>
+</Layout>
+
+<style></style>

@@ -1,0 +1,32 @@
+{
+
+    "SEO_TITLE":"Portfolio LnyDev - web developer",
+    "HOME_INTRO": {
+        "INTRO_TITTLE":"Hello, i'm Francisco",
+        "INTRO_DESCRIPTION_1":"Computer engineering graduate.",
+        "INTRO_DESCRIPTION_2":"Full Stack Web Developer.",
+        "INTRO_DESCRIPTION_3": "I live in Mulchén, Chile."
+    },
+
+    "SUBTITLE": {
+        "TITLE_EXP": "Work experience",
+        "TITLE_TEC": "Technologies"
+    },
+    
+    "EXP_TEXT": {
+        "DATE_TEXT": "January 2024 - Present",
+        "TITLE_EXP": "Gas Distributor Website",
+        "TITLE_DESC": "Responsible for the complete development of a website, including design, implementation of content management system, data authentication configuration for different types of users and companies/branches, creation of stock management system, and daily financial activity tracking module (cash)."
+    },
+    "SOCIAL_TEXT": {
+        "GIT_TEXT": "GitHub",
+        "EMAIL": "fcoretcvas@gmail.com",
+        "CV": "Dowload CV"
+    },
+    "TEC_TEXT": {
+        "FRONT": "Frontend",
+        "BACK": "Backend",
+        "APRENDIENDO": "Learning",
+        "HERRAMIENTAS": "Tools"
+    }
+}

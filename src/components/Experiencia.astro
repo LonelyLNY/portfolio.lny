@@ -1,0 +1,28 @@
+---
+
+import ExperienciaItems from "./ExperienciaItems.astro" 
+const EXPERIENCIA =[
+    {
+        date:'Enero 2024 - Actualidad',
+        title:'Pagina Web para distribuidora de gas',
+        description: 'Encargado del desarrollo completo de un sitio web, incluyendo diseño, implementación de sistema de gestión de contenido, configuración de autenticación de datos para diferentes tipos de usuarios y empresas/sucursales, creación de sistema de gestión de stock y módulo de seguimiento diario de actividades financieras (caja).',
+        
+    },
+    {
+        date:'Septiembre 2023 - Diciembre 2023',
+        title:'Prototipo de pagina web',
+        description: 'Desarrollo integral de un prototipo, abarcando desde la concepción del diseño hasta la implementación de funcionalidades clave, tales como autenticación de usuarios , sistemas de gestión de contenidos y generación de informes/reportes simples.',
+    },
+
+]
+---
+<ol class="items-center sm:flex">
+    {
+        EXPERIENCIA.map(experiencia =>(
+            <li class="relative mb-6 sm:mb-0">
+                <ExperienciaItems {...experiencia}/>
+            </li>
+        ))
+    }
+</ol>
+
