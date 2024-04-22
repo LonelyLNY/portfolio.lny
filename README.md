@@ -1,3 +1,9 @@
+
+
+![image](https://github.com/LonelyLNY/portfolio.lny/assets/110742988/e3405b50-80c2-4355-84ca-07b457ec1e59)
+
+
+
 # Astro Starter Kit: Basics
 
 ```sh
